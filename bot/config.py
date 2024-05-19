@@ -10,7 +10,7 @@ class Telegram:
     BOT_TOKEN = getenv("BOT_TOKEN", "")
     PORT = int(getenv("PORT", 8080))
     SESSION_STRING = getenv("SESSION_STRING", "")
-    BASE_URL = getenv("BASE_URL").rstrip('/')
+    BASE_URL = getenv("BASE_URL"), "")
     DATABASE_URL = getenv("DATABASE_URL")
     AUTH_CHANNEL = [channel.strip() for channel in getenv("AUTH_CHANNEL").split(",")]
     THEME = getenv("THEME", "quartz").lower()
